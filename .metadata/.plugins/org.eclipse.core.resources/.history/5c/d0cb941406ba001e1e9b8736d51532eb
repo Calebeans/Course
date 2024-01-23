@@ -1,0 +1,8 @@
+package entities;
+
+public class Conta {
+
+	private int numeroDaConta;
+	private String nomeDoTitular;
+	private double depositoInicial;
+}

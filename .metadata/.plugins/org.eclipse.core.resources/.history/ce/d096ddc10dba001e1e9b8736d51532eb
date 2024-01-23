@@ -1,0 +1,57 @@
+package entities;
+
+public class Conta {
+
+	private int numeroDaConta;
+	private String nomeDoTitular;
+	private double depositoInicial;
+	
+	public Conta(int numeroDaConta, String nomeDoTitular) {
+		this.numeroDaConta = numeroDaConta;
+		this.nomeDoTitular = nomeDoTitular;
+	}
+	
+	public Conta(int numeroDaConta, String nomeDoTitular, double depositoInicial) {
+		this.numeroDaConta = numeroDaConta;
+		this.nomeDoTitular = nomeDoTitular;
+		this.depositoInicial = depositoInicial;
+	}
+
+	public int getNumeroDaConta() {
+		return numeroDaConta;
+	}
+
+	public void setNumeroDaConta(int numeroDaConta) {
+		this.numeroDaConta = numeroDaConta;
+	}
+
+	public String getNomeDoTitular() {
+		return nomeDoTitular;
+	}
+
+	public void setNomeDoTitular(String nomeDoTitular) {
+		this.nomeDoTitular = nomeDoTitular;
+	}
+
+	public double getDepositoInicial() {
+		return depositoInicial;
+	}
+
+	public void setDepositoInicial(double depositoInicial) {
+		this.depositoInicial = depositoInicial;
+	}
+	
+	public void alterarConta(String nomeDoTitular) {
+		this.nomeDoTitular = nomeDoTitular;
+	}
+
+	
+	public String toString() {
+		return "Conta [numeroDaConta=" + numeroDaConta + ", nomeDoTitular=" + nomeDoTitular + ", depositoInicial="
+				+ depositoInicial + "]";
+	}
+	
+	
+	
+	
+}

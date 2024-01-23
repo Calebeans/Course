@@ -1,0 +1,11 @@
+package util;
+
+public class currencyConverter {
+
+	public static double valorDolar;
+	public static double compraDolar;
+	
+	public static double calcularCotacao() {
+		return 
+	}
+}

@@ -1,0 +1,45 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Conta;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Conta conta;
+
+		System.out.println("Cadastrando uma conta!");
+		System.out.println("Informe o número da conta: ");
+		int numConta = sc.nextInt();
+		System.out.println("Informe o nome do titular da conta: ");
+		String nomeTitular = sc.nextLine();
+
+		System.out.println("Você quer fazer um depósito inicial? (s/n) ");
+		char depositoOpcao = sc.next().charAt(0);
+		if (depositoOpcao == 's') {
+			System.out.println("Informe o saldo: ");
+			double saldoInicial = sc.nextDouble();
+			conta = new Conta(numConta, nomeTitular, saldoInicial);
+		}
+		conta = new Conta(numConta, nomeTitular);
+		System.out.println("Conta cadastrada!");
+
+		System.out.println("Editando uma Conta");
+		System.out.println("Informe o novo nome: ");
+		String novoNome = sc.nextLine();
+
+	}
+
+	public static void menu() {
+		System.out.println("1- Editar conta");
+		System.out.println("2- Depósito");
+		System.out.println("3- Saque");
+		System.out.println("Escolha uma opção: ");
+	}
+
+}

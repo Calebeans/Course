@@ -1,0 +1,12 @@
+package util;
+
+public class currencyConverter {
+
+	public static double valorDolar;
+	public static double compraDolar;
+	public static double valorReais;
+	
+	public static void calcularCotacao() {
+		return ((compraDolar * 0.06) 
+	}
+}

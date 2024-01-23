@@ -1,0 +1,8 @@
+package entities;
+
+public class Employee {
+
+	public double netSalary() {
+		
+	}
+}
